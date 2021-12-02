@@ -1,6 +1,8 @@
 autopep8==1.6.0
 certifi==2021.10.8
+colorama==0.4.4
 colour==0.1.5
+commonmark==0.9.1
 cssselect2==0.4.1
 fusepy==3.0.1
 lxml==4.6.3
@@ -8,11 +10,16 @@ numpy==1.19.0
 Pillow==7.2.0
 potracer==0.0.1
 pycodestyle==2.8.0
+Pygments==2.10.0
 pypng==0.0.20
+pyusb==1.2.1
 reportlab==3.6.1
+rich==10.14.0
 svglib==1.1.0
 svgwrite==1.4
+textual==0.1.12
 tinycss2==1.1.0
 toml==0.10.2
 tqdm==4.62.3
+typing-extensions==3.10.0.2
 webencodings==0.5.1
