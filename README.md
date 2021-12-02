@@ -1,6 +1,8 @@
 # Supernote local sync app
 
-<img src="./assets/demo.gif"  />
+<p align="center">
+    <img src="./assets/demo.gif"  />
+</p>
 
 ## Install
 
