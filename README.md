@@ -14,6 +14,10 @@ conda create --name supernote python=3.7
 conda activate supernote
 # install dependencies
 pip install -r requirements.txt
+# Make a copy of the config template
+cp config-template.env config.env
+# MODIFY `config.env` with paths to your supernote and local sync directory!!
+#-----
 # Run the main file
 python supernote-app.py
 ```

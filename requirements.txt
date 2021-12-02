@@ -12,6 +12,7 @@ potracer==0.0.1
 pycodestyle==2.8.0
 Pygments==2.10.0
 pypng==0.0.20
+python-dotenv==0.19.2
 pyusb==1.2.1
 reportlab==3.6.1
 rich==10.14.0

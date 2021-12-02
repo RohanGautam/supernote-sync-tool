@@ -1,26 +1,24 @@
 import os
-from rich.padding import Padding
 from rich.panel import Panel
 from rich import print as richprint
-from rich.console import Console, ConsoleOptions, RenderResult, RenderableType
-from rich.text import Text
 
 from textual.app import App
 from textual.widget import Widget
 from textual.reactive import Reactive
-from textual.widgets import Header, Footer, FileClick, ScrollView, DirectoryTree, Placeholder, Button, ButtonPressed, TreeClick
+from textual.widgets import Header, Footer, ScrollView, DirectoryTree, TreeClick, Button
 
 import re
-import time
 import glob
 from pathlib import Path
 import supernotelib as sn
 from tqdm import tqdm
+from dotenv import dotenv_values
+
+config = dotenv_values("config.env")
 
 
-SUPERNOTE_PATH = '/run/user/1000/gvfs/mtp:host=rockchip_Supernote_A5_X_SN100B10004997/Supernote/Note'
-# SUPERNOTE_PATH = '/home/rohan/Desktop/Supernote_files/Notes_synced'
-SYNC_DIR = '/home/rohan/Desktop/Supernote_files/Notes_synced'
+SUPERNOTE_PATH = config['SUPERNOTE_PATH']
+SYNC_DIR = config['SYNC_DIR']
 
 
 def convert_to_pdf(notebook_path, output_path, pdf_type='original'):
