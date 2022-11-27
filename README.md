@@ -9,7 +9,10 @@
 Due to the library spec of [textual](https://github.com/willmcgugan/textual), this currently works on Macos/linux **only**.
 
 ```bash
-# create a python envirnment (one-time)
+# clone the repo, including submodules (ssh url example)
+git clone --recurse-submodules git@github.com:RohanGautam/supernote-tool.git
+
+# create a python environment (one-time)
 conda create --name supernote python=3.7
 conda activate supernote
 # install dependencies
