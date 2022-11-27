@@ -1,0 +1,3 @@
+[submodule "supernote-tool"]
+	path = supernote-tool
+	url = git@github.com:jya-dev/supernote-tool.git
