@@ -1,4 +1,5 @@
 import os
+import sys
 from rich.panel import Panel
 from rich import print as richprint
 
@@ -10,10 +11,13 @@ from textual.widgets import Header, Footer, ScrollView, DirectoryTree, TreeClick
 import re
 import glob
 from pathlib import Path
-import supernotelib as sn
 from tqdm import tqdm
 from dotenv import dotenv_values
 
+# autopep8: off
+sys.path.append("./supernote-tool")
+import supernotelib as sn
+# autopep8: on
 config = dotenv_values("config.env")
 
 
